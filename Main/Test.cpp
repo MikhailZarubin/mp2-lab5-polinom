@@ -2,13 +2,17 @@
 
 int main()
 {
-	TList<int> list;
-	list.InsFirst(10);
-	list.InsFirst(10);
-	list.InsFirst(10);
-	list.InsFirst(1);
-	list.InsLast(102);
-	list.DelFirst();
-	std::cout << list;
+	TPolinom p1, p2;
+	std::cin >> p1;
+	std::cin >> p2;
+	std::cout << "p1:" << std::endl << p1 << std::endl << "p2:" << std::endl << p2 << std::endl;
+	TMonom m;
+	m.x = 2;
+	m.y = 3;
+	m.coeff = 5.0;
+	p1.InsMonom(m);
+	std::cout << "p1:" << p1<<std::endl;
+	p1+= p2;
+	std::cout << "p1"<<p1<<std::endl;
 	return 0;
 }
