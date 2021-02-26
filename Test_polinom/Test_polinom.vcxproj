@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8db3a012-bbbb-40bf-94f0-c7d7c0daa5f8}</ProjectGuid>
-    <RootNamespace>Main</RootNamespace>
+    <ProjectGuid>{7ff37b4c-272f-4526-85a6-018f0ad8cb1a}</ProjectGuid>
+    <RootNamespace>Testpolinom</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Test.cpp" />
+    <ClInclude Include="gtest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gtest-all.cc" />
+    <ClCompile Include="TestMain.cpp" />
+    <ClCompile Include="TestPolinom.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
